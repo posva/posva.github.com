@@ -11,7 +11,7 @@ pygments: true
 #
 title : Posva Dev Blog
 tagline: Coding => Fun
-author : Eduardo San Martin Morote
+author :
   name : Eduardo San Martin Morote
   email : posva13@gmail.com
   github : posva
@@ -101,7 +101,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+      tracking_id : 'UA-41234870-1'
     getclicky :
       site_id : 
     mixpanel :
