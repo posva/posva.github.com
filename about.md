@@ -5,10 +5,17 @@ tagline: why should you bother about me?
 ---
 {% include JB/setup %}
 
-I'm still working on this *page* so please wait a bit more :(
+## Where
+I'm a guy from Spain who loves programming and games. I currently live in France for my studies.
 
-# Summary
+## Why
+I like to share the things I do and to improve them, that's why I use this blog.
 
-# Studies
+## What
+I'll post here anything I want to but it will mainly about coding and projects I do.
 
-# Hobbies
+## When
+I started with this blog the 27/05/2013. I had another [blog](http://www.killdaducks.com) where I used to post things about one game I code.
+
+## How
+Smashing a keyboard.
