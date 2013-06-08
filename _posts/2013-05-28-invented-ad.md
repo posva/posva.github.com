@@ -3,7 +3,7 @@ layout: post
 title: "Invented Ad"
 description: ""
 tagline: "Sometimes I'm able to draw"
-category: out-topic
+categories: [out-topic, retro]
 tags: [old school, poster]
 ---
 {% include JB/setup %}
