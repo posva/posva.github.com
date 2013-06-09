@@ -8,7 +8,7 @@ tags: [old school, poster]
 ---
 {% include JB/setup %}
 
-Hey, todya I have something that have nothing to deal with my projects. It's just a work we needed to do for a disciple. I have some fun using my tablet and drew on top of some bioshock drawings to get something not too ugly.
+Hey, today I have something that have nothing to deal with my projects. It's just a work we needed to do for a disciple. I have some fun using my tablet and drew on top of some bioshock drawings to get something not too ugly.
 
 There were many ads and people voted, I turned out that my poster won :P
 
