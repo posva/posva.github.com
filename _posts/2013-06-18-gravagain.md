@@ -2,8 +2,8 @@
 layout: post
 title: "Grav...Again!"
 description: "VVVVVV Gravitron clone"
-categories: [cpp, games]
-tags: [cpp, game, vvvvvv, gravitron]
+categories: [cpp, games, Grav]
+tags: [cpp, game, vvvvvv, gravitron, grav]
 ---
 {% include JB/setup %}
 
