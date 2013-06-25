@@ -8,7 +8,7 @@ tags: [grav, games, vvvvvv, cpp, gravitron]
 {% include JB/setup %}
 
 ##Grav
-I already talk about that project, well here I'm releasing the last version I have. It's not complete but I'll not work on it anymore, therefore you can consider this as th elas version and play it as much as you want.
+I already talked about that project, well here I'm releasing the last version I have. It's not complete but I'll not work on it anymore, therefore you can consider this as th elas version and play it as much as you want.
 
 There are many things not working on this version... But the main things works well:
 
