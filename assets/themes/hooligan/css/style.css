@@ -135,6 +135,9 @@ hr {
 img.simple {
     box-shadow: none;
 }
+.simple img {
+    box-shadow: none;
+}
 
 /* line 115, ../_sass/_base.scss */
 .content.no-header {

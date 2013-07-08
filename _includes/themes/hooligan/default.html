@@ -24,12 +24,14 @@
     <link href="{{ ASSET_PATH }}/css/darkstrap.css" rel="stylesheet" type="text/css" media="all">    
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
+    <!-- Codewall -->
+    <link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css">
     
     <!-- fav and touch icons -->
-    <link rel="shortcut icon" href="icons/favicon.ico">
-    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="{{site.url}}/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="{{site.url}}/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{site.url}}/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{site.url}}/icons/apple-touch-icon-114x114.png">
   </head>
 
   <body>
@@ -44,7 +46,7 @@
           </a>      
 
 
-          <a class="brand" href="{{ HOME_PATH }}"><img class="simple" src="{{site.url}}/icons/site-icon.png" width="24" height="24"/>   {{ site.title }}</a>
+          <a class="brand" href="{{ HOME_PATH }}"><img src="{{site.url}}/icons/site-icon.png" width="24" height="24"/>   {{ site.title }}</a>
 
 
           <div class="nav-collapse">
@@ -119,6 +121,9 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{{ ASSET_PATH }}/js/jquery.min.js"><\/script>')</script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Coderwall -->
+    <script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
 
     {% include JB/analytics %}
   </body>
