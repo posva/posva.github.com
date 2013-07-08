@@ -27,9 +27,17 @@ Usage:
     {% if node.title != null %}
       {% if group == null or group == node.group %}
       	{% if page.url == node.url %}
-      	<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
+          {% if page.title == "Kill da Ducks" %}
+            <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active"><img src="{{site.url}}/img/kdd.png" width="24" height="24"/> {{node.title}}</a></li>
+          {% else %}
+            <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
+          {% endif %}
       	{% else %}
-      	<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+          {% if node.title == "Kill da Ducks" %}
+            <li><a href="{{ BASE_PATH }}{{node.url}}"><img class="simple" src="{{site.url}}/img/kdd.png" width="24" height="24"/> {{node.title}}</a></li>
+          {% else %}
+            <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+          {% endif %}
       	{% endif %}
       {% endif %}
     {% endif %}

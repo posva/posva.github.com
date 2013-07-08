@@ -131,6 +131,11 @@ hr {
 .content img {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
 }
+
+img.simple {
+    box-shadow: none;
+}
+
 /* line 115, ../_sass/_base.scss */
 .content.no-header {
   padding-top: 40px;
