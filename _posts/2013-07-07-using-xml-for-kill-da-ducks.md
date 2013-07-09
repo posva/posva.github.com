@@ -78,6 +78,7 @@ To this:
     </sprite>
     <sprite name="s_box_trunk" originx="2.000000" originy="2.000000">
         <frame left="64.000000" top="40.000000" width="4" height="4"/>
+    </sprite>
 </animations>
 {% endhighlight %}
 
