@@ -53,7 +53,7 @@
     <h4>Related Posts</h4>
     <ul>
         {% for post in site.related_posts limit:5 %}
-        <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }} - {{post.date | date: "%m-%d-%Y"}}</a></li>
+        <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }} - {{post.date | date_to_string}}</a></li>
             {% endfor %}
           </ul>
   </div>
