@@ -15,7 +15,7 @@ Before I used `ini` files which were enough but I just wanted more flexible conf
 I went from this:
 
 ####INI file
-{% highlight ini %}
+{% highlight ini linenos=table%}
 [bak1.png]
 h = 64
 w = 64
