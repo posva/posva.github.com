@@ -27,21 +27,42 @@ Usage:
     {% if node.title != null and node.group != "hide" %}
       {% if group == null or group == node.group %}
       	{% if page.url == node.url %}
-          {% if page.title == "Kill da Ducks" %}
-            <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active"><img src="{{site.url}}/img/kdd.png" width="24" height="24"/> {{node.title}}</a></li>
-          {% else %}
-            <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
+          <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">
+          {% if page.img != null %}
+            <img src="{{site.url}}/{{page.img}}" class="simple" width="24" height="24"/> 
           {% endif %}
-      	{% else %}
-          {% if node.title == "Kill da Ducks" %}
-            <li><a href="{{ BASE_PATH }}{{node.url}}"><img class="simple" src="{{site.url}}/img/kdd.png" width="24" height="24"/> {{node.title}}</a></li>
-          {% else %}
-            <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+          {{node.title}}</a></li>
+        {% elsif node.dropdown != null and node.dropdown == page.group %}
+          <li class="active dropdown">
+          <a href="#" class="dropdown-toggle active" data-toggle="dropdown">
+          {% if page.img != null %}
+            <img src="{{site.url}}/{{page.img}}" class="simple" width="24" height="24"/> 
           {% endif %}
+          {{page.title}}<b class="caret"></b></a>
+          {% assign drop_group = node.dropdown %}
+          {% include JB/pages_dropdown %}
+          </li>
+        {% elsif node.dropdown != null%}
+          <li class="dropdown">
+          <a href="{{node.url}}" class="dropdown-toggle" data-toggle="dropdown">
+          {% if node.img != null %}
+            <img src="{{site.url}}/{{node.img}}" class="simple" width="24" height="24"/> 
+          {% endif %}
+          {{node.title}}<b class="caret"></b></a>
+          {% assign drop_group = node.dropdown %}
+          {% include JB/pages_dropdown %}
+          </li>
+        {% else %}
+          <li><a href="{{ BASE_PATH }}{{node.url}}">
+          {% if node.img != null %}
+            <img src="{{site.url}}/{{node.img}}" class="simple" width="24" height="24"/> 
+          {% endif %}
+          {{node.title}}</a></li>
       	{% endif %}
       {% endif %}
     {% endif %}
   {% endfor %}
 {% endif %}
+
 {% assign pages_list = nil %}
 {% assign group = nil %}

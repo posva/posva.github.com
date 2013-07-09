@@ -109,6 +109,11 @@ hr {
   padding: 12px 10px 8px;
 }
 
+/* BOOTSTAP CORRECTION */
+.nav li.active.dropdown {
+    background-color: #222;
+}
+
 /* line 99, ../_sass/_base.scss */
 .container > footer {
   margin-top: 20px;
