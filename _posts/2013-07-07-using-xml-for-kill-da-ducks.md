@@ -15,7 +15,7 @@ Before I used `ini` files which were enough but I just wanted more flexible conf
 I went from this:
 
 ####INI file
-{% highlight ini lineos %}
+{% highlight ini %}
 [bak1.png]
 h = 64
 w = 64
@@ -62,7 +62,7 @@ y = 72
 To this:
 
 ####XML file
-{% highlight xml lineos %}
+{% highlight xml linenos=table %}
 <animations texture="pack_test.png" key="mini">
     <sprite name="bak1" originx="32.000000" originy="32.000000">
         <frame left="0.000000" top="0.000000" width="64" height="64"/>
