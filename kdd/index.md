@@ -11,7 +11,3 @@ img: img/kdd.png
 
 Comme here soon! :D
 
-##CoderWall
-<section class="coderwall simple" data-coderwall-username="posva" data-coderwall-orientation="vertical"></section>
-
-
