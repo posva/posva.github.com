@@ -7,13 +7,13 @@ tags: [misc, blog, url, namecheap]
 ---
 {% include JB/setup %}
 
-For some reason I wanted to have my own URL, it's nice to have [http://posva.github.io](http://posva.github.io) as URL but having a `.com`, `net`, `.org` is even better!
+For some reason I wanted to have my own URL, it's nice to have [http://posva.github.io](http://posva.github.io) as URL but having a `.com`, `.net`, `.org` is even better!
 
-I searched for some Domain sellers with nice prices and found this one: [Namecheap](http://namecheap.com). I found the prices to be good enough to be worth so I searcher some coupons codes (Because I saw an Coupon Code option while I was purchasing) and got around 1$ reduction. It costed around 8-9€.
+I searched for some Domain sellers with nice prices and found this one: [Namecheap](http://namecheap.com). I found the prices to be good enough to be worth so I searched some coupons codes (Because I saw a Coupon Code option while I was purchasing) and got around 1$ reduction. It costed around 8€.
 
-Then I needed to go trought 2 easy steps of configuration:
+Then I needed to go through 2 easy steps of configuration:
 
-- Add a `CNAME` file to my blog repo (the one I push to github, [this one](https://github.com/posva/posva.github.com) with my new URL, in this case `posva.net`. It must be added without the `http://` and you must be sure that your URL doesn't start by `www`, otherwhise the `www` must be added to:
+- Add a `CNAME` file to my blog repo (the one I push to github, [this one](https://github.com/posva/posva.github.com) with my new URL, in this case `posva.net`. It must be added without the `http://` and you must be sure that your URL doesn't start by `www`, otherwhise the `www` must be added too:
 
 {% highlight csh %}
 echo "posva.net" > CNAME
