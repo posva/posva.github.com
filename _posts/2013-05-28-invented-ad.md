@@ -14,7 +14,7 @@ There were many ads and people voted, I turned out that my poster won :P
 
 I just wanted to show it off:
 
-![ad]({{site.url}}/img/posts/poster.jpg)
+![ad]({{BASE_PATH}}/img/posts/poster.jpg)
 
 It's in French because I'm studying in France, not a big deal...
 

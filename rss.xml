@@ -1,6 +1,7 @@
 ---
 layout: nil
 title : RSS Feed
+img: img/rss.png
 ---
 
 <?xml version="1.0" encoding="UTF-8" ?>

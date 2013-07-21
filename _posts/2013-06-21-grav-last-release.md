@@ -22,8 +22,8 @@ The Hard and God mode doesn't work well anymore but you can play them for the fu
 ##Pics
 Because everybody likes pics...
 
-![pic]({{site.url}}/img/posts/grav/final1.png)
-![pic]({{site.url}}/img/posts/grav/final2.png)
+![pic]({{BASE_PATH}}/img/posts/grav/final1.png)
+![pic]({{BASE_PATH}}/img/posts/grav/final2.png)
 
 ##Downloads
 
