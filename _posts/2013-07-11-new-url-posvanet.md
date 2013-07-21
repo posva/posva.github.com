@@ -24,7 +24,7 @@ git push origin master
 
 - Finally you must configure the URL to point to gihub servers. For [Namecheap](htpp://namecheap.com) I needed to go to URL Forwarding and then change the existing values as follows:
 
-![p]({{site.url}}/img/posts/namecheap.png)
+![p]({{BASE_PATH}}/img/posts/namecheap.png)
 
 Always as `A` records (the type!).
 
