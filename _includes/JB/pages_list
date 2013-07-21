@@ -29,7 +29,7 @@ Usage:
       	{% if page.url == node.url %}
           <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">
           {% if page.img != null %}
-            <img src="{{BASE_PATH}}/{{page.img}}" class="simple" width="16" height="16"/> 
+            <img src="{{BASE_PATH}}/{{page.img}}" class="simple" width="24" height="24"/> 
           {% endif %}
           {{node.title}}</a></li>
         {% elsif node.dropdown != null and node.dropdown == page.group %}
@@ -55,7 +55,7 @@ Usage:
         {% else %}
           <li><a href="{{ BASE_PATH }}{{node.url}}">
           {% if node.img != null %}
-            <img src="{{BASE_PATH}}/{{node.img}}" class="simple" width="16" height="16"/> 
+            <img src="{{BASE_PATH}}/{{node.img}}" class="simple" width="24" height="24"/> 
           {% endif %}
           {{node.title}}</a></li>
       	{% endif %}
