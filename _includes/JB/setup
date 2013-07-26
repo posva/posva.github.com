@@ -6,7 +6,11 @@
     {% include custom/setup %}
   {% else %}
     {% if site.safe and site.JB.BASE_PATH and site.JB.BASE_PATH != '' %}
-      {% assign BASE_PATH = site.JB.BASE_PATH %}
+      {% if page.rss == false %}
+        {% assign BASE_PATH = site.JB.BASE_PATH %}
+      {% else %}
+        {% assign BASE_PATH = site.url %}
+      {% endif %}
       {% assign HOME_PATH = site.JB.BASE_PATH %}
     {% else %}
       {% assign BASE_PATH = nil %}
