@@ -55,6 +55,11 @@
         {% for post in site.related_posts limit:5 %}
         <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }} - {{post.date | date_to_string}}</a></li>
             {% endfor %}
-          </ul>
+    </ul>
+    <h4>Share me pls!</h4>
+    <div class="post-sharing">
+      <br/>
+      {% include JB/sharing %}
+    </div>
   </div>
 </div>
