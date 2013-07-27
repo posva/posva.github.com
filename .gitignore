@@ -8,3 +8,6 @@ Thumbs.db
 
 .rbenv-version
 .rvmrc
+.pygments-cache
+_plugins/
+testing.md
