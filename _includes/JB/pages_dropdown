@@ -1,10 +1,19 @@
 
 <ul class="dropdown-menu">
 {% for node in pages_list %}
-{% if node.group == drop_group %}
+{% if node.group == drop_group and node.url != page.url %}
   <li><a href="{{ BASE_PATH }}{{node.url}}">
     {% if node.img != null %}
-      <img src="{{site.url}}/{{node.img}}" class="simple" width="24" height="24"/> 
+      <img src="{{ BASE_PATH }}/{{node.img}}" class="simple" width="24" height="24"/> 
+    {% endif %}
+     {{node.title}}</a></li>
+  {% endif %}
+{% endfor %}
+{% for node in site.posts %}
+{% if node.group == drop_group and node.url != page.url%}
+  <li><a href="{{ BASE_PATH }}{{node.url}}">
+    {% if node.img != null %}
+      <img src="{{ BASE_PATH }}/{{node.img}}" class="simple" width="24" height="24"/> 
     {% endif %}
      {{node.title}}</a></li>
   {% endif %}
