@@ -25,7 +25,7 @@ Here is the help, you can get it aswell by passing the -h option
 usage:
 
 {% highlight csh %}
-./configure.sh [-hDa] [-s src-dir] [-o obj-dir] [-b bin-dir]
+./configure.sh [-hfDa] [-s src-dir] [-o obj-dir] [-b bin-dir]
                [-c compiler] [-O "compiler options"] [-L link-dirs]
                [-l lib] [-I include-dir] [-M Makefile-name]
                [-e file-extension] [-E executable-name]
@@ -38,6 +38,8 @@ usage:
   -a    Automatic conversion of file in dos format to unix format. This option uses d
 
   -C    No colors.
+
+  -f    Forces the creation of the Makefile when it already exists without doing any verification.
 
 Running without arguments is equivalent to this:
 {% highlight csh %}
