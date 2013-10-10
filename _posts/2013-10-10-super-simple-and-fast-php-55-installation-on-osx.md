@@ -9,6 +9,29 @@ tags: [php, misc]
 
 I'm starting to get more interested into web technologies and I feel the need of updating some of my tools such as PHP. I was kind of surpirsed how easy it is thanks to [this](http://php-osx.liip.ch/). The instructions are described there but I'm going to put them here too :P
 
+## 1. Check you version
+
+{% highlight csh %}
+php -v
+{% endhighlight %}
+
+If < 5.5 go to step 2 else you already have PHP 5.5!!
+
+## 2. Install PHP5.5
+
+{% highlight csh %}
+curl -s http://php-osx.liip.ch/install.sh | bash -s 5.5
+{% endhighlight %}
+
+## 3. Add it to the PATH
+
+{% highlight csh %}
+export PATH=/usr/local/php5/bin:$PATH
+{% endhighlight %}
+
+Enjoy!
+
+## What does it do?
 Here is the script executed:
 
 {% highlight csh %}
@@ -90,25 +113,3 @@ echo "Start packager (may take some time)";
 sudo /usr/local/packager/packager.py install $TYPE-frontenddev
 cd $ORIPWD
 {% endhighlight %}
-
-## 1. Check you version
-
-{% highlight csh %}
-php -v
-{% endhighlight %}
-
-If < 5.5 go to step 2 else you already have PHP 5.5!!
-
-## 2. Install PHP5.5
-
-{% highlight csh %}
-curl -s http://php-osx.liip.ch/install.sh | bash -s 5.5
-{% endhighlight %}
-
-## 3. Add it to the PATH
-
-{% highlight csh %}
-export PATH=/usr/local/php5/bin:$PATH
-{% endhighlight %}
-
-Enjoy!
