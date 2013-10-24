@@ -145,8 +145,7 @@ else
 fi
 {% endhighlight %}
 
-4. Push it to a remote repo!
-5. Profit :D
+Then push it to a remote repo and Profit :D!
 
-Now everytime you do some modification you just have to `push` it and will be able to `pull` it.
+Now everytime you do some modification you just have to `push` it and you will be able to `pull` it from another computer.
 
