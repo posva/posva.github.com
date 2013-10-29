@@ -16,7 +16,7 @@ Well this is mostly like an Asian playing Gravitron, I really recommend you to p
 And Well, that's why I decided, a year ago, to code this clone. I wanted to add more posssibilities to the game, and making it more even more fun.
 
 ## Grav
-I already posted about this game many times, you can found the posts about it in the same category Grav but I still need to port them from my [old blog](http://killdaducks.com).
+I already posted about this game many times, you can found the posts about it in the same category Grav but I still need to port them from my [old blog](http://killdaducks.blogspot.com).
 Well the idea is quite simple, just a Super Gravitron clone with better controls and more modes. As I said I never ended it...
 Some days ago I decided to work a bit on the game. I spent like 2 hours cleaning up the warnings I left behind me and changing the SFML2 calls. But it worked quite well...
 
