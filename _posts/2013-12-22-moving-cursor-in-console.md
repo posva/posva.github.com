@@ -29,6 +29,10 @@ Here they are:
 * Move the cursor down: `\033[<N>B`. It never scroll down more than the number of visible lines
 * Move the cursor forward: `\033[<N>C`. It never goes over to the next line
 * Move the cursor backward: `\033[<N>D`. It never goes back to the previous line
+* Save the cursor position: `\033[s`
+* Restore the cursor position: `\033[u`
 
 This is not an exhaustive list but it covers the main codes and it's enough to work with.
 
+## Reference
+To find more characters sequence you can check them here: [ANSI escape code](http://en.wikipedia.org/wiki/ANSI_escape_code#CSI). Again it's not a complete list ^^
