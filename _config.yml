@@ -9,6 +9,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Posva Dev Blog
+markdown : kramdown
 tagline: Coding => Fun
 author :
   name : Eduardo San Martin Morote
