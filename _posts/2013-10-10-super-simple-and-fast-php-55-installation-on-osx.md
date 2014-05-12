@@ -11,7 +11,7 @@ I'm starting to get more interested into web technologies and I feel the need of
 
 ## 1. Check you version
 
-{% highlight csh %}
+{% highlight bash %}
 php -v
 {% endhighlight %}
 
@@ -19,13 +19,13 @@ If < 5.5 go to step 2 else you already have PHP 5.5!!
 
 ## 2. Install PHP5.5
 
-{% highlight csh %}
+{% highlight bash %}
 curl -s http://php-osx.liip.ch/install.sh | bash -s 5.5
 {% endhighlight %}
 
 ## 3. Add it to the PATH
 
-{% highlight csh %}
+{% highlight bash %}
 export PATH=/usr/local/php5/bin:$PATH
 {% endhighlight %}
 
@@ -34,7 +34,7 @@ Enjoy!
 ## What does it do?
 Here is the script executed:
 
-{% highlight csh %}
+{% highlight bash %}
 #!/bin/bash
 
 # package type (subfolder in packager)

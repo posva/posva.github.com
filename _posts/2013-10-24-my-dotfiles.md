@@ -25,7 +25,7 @@ These are the steps I did to have my dotfiles working. I got inspired by someone
 3. Create an installation script adapted to your dotfiles. This is the harder step, depending on what you want to sync your script will be longer. Usually yoru script should always do a security copy of every file you are going to replace and then create symbolic links with `ln -s` to point to your files. Here is my `install.sh` script. It downloads `zsh` and oh-my-zsh, which I really recommend :P
 
 _Warning!_ This version may change in future to check the current version go [here](https://github.com/posva/dotfiles/blob/master/install.sh)
-{% highlight csh %}
+{% highlight bash %}
 #!/bin/bash
 ############################
 # install.sh

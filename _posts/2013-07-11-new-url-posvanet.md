@@ -15,7 +15,7 @@ Then I needed to go through 2 easy steps of configuration:
 
 - Add a `CNAME` file to my blog repo (the one I push to github, [this one](https://github.com/posva/posva.github.com) with my new URL, in this case `posva.net`. It must be added without the `http://` and you must be sure that your URL doesn't start by `www`, otherwhise the `www` must be added too:
 
-{% highlight csh %}
+{% highlight bash %}
 echo "posva.net" > CNAME
 git add CNAME
 git commit -m "New URL for my Blog"

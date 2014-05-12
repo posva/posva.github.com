@@ -24,7 +24,7 @@ Here is the help, you can get it aswell by passing the -h option
 
 usage:
 
-{% highlight csh %}
+{% highlight bash %}
 ./configure.sh [-hfDa] [-s src-dir] [-o obj-dir] [-b bin-dir]
                [-c compiler] [-O "compiler options"] [-L link-dirs]
                [-l lib] [-I include-dir] [-M Makefile-name]
@@ -42,7 +42,7 @@ usage:
   -f    Forces the creation of the Makefile when it already exists without doing any verification.
 
 Running without arguments is equivalent to this:
-{% highlight csh %}
+{% highlight bash %}
 ./configure.sh -D -s src -o obj -b bin -c "xcrun clang++"
                -O "-Wall -Wextra -O2 -std=c++11 -stdlib=libc++"
                -Isrc -L/usr/local/lib -e cpp -E main -M Makefile

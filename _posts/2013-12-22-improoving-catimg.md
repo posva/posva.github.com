@@ -19,7 +19,7 @@ Displaying sprites and tiny pictures was very cool as it was quite fast but larg
 By _googling_ `catimg` I found this nifty [gist](https://gist.github.com/livibetter/5954298 "Click Me"). It was quite funny because the script was published some days after mine but it was way faster (_Even more if we take into account the very first version with `grep` uugh_). The point is that some lines of code made me see that I was a fool using such slow techniques to convert colors...
 
 I'm refering to this lines
-{% highlight csh %}
+{% highlight bash %}
 ((
   I++,
   IDX = 16
@@ -33,7 +33,7 @@ I'm refering to this lines
 Well first of all the `(( x = a + b, y = 3 ))` was new to me and I found it very nice (much better than using `expr` all the time), but I realized that the color could be calculated. I didn't see that colors code were used in a particular order and that I could exploit that, _shame on me..._
 
 Then I realized that the script didn't converted grayscale colors so I added it:
-{% highlight csh %}
+{% highlight bash %}
 if [ ! "$R" = "NO" ]; then
     if [ "$R" -eq "$G" -a "$G" -eq "$B" ]; then
       ((
@@ -57,7 +57,7 @@ I also check for transparent colors and that's why there is a `"$R" = "NO"` but 
 
 After this I looked at another line:
 
-{% highlight csh %}
+{% highlight bash %}
 convert "$SRC" -crop 1x1+$W txt:- 2>/dev/null |
   sed -e '1d;s/^.*(\(.*\)[,)].*$/\1/g;y/,/ /' |
   while read R G B _; do
@@ -65,7 +65,7 @@ convert "$SRC" -crop 1x1+$W txt:- 2>/dev/null |
 
 Instead of saving the conversion to a new file just output it to teh stdout and parse it live. I used my own command line with my regexp and replaced the `_` with `f` because it gave some troubles and voila:
 
-{% highlight csh %}
+{% highlight bash %}
 convert "$IMG" -resize $COLS\> +dither `echo $REMAP` txt:- |
 sed -e 's/.*none.*/NO NO NO/g' -e '1d;s/^.*(\(.*\)[,)].*$/\1/g;y/,/ /' |
 while read R G B f; do

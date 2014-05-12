@@ -13,7 +13,7 @@ It turns out to be very easy, just using the `date` command bring us the elapsed
 There's just a little detail, BSD `date` behaves a bit differently from GNU `date`.
 More precisely BSD doesn't have the `%N` format for nanoseconds. We just need to check if the system uses a BSD `date` or a GNU one
 
-{% highlight csh %}
+{% highlight bash %}
 #! /bin/bash
 # Save the current time
 if man date | grep BSD >/dev/null 2>/dev/null; then
