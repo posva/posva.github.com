@@ -31,8 +31,11 @@ The first thing is done by changing the DHCP setting where you can assign a stat
 Then you need to activate the demilitarized zone (DMZ) and use the static IP you gave to your computer. Finnally web request are sent to the port `80` but your server is serving on another port. You have to redirect the request to the correct port. This is achieved by using the NAT/PAT rule system and adding one rule to redirect the TCP request at port `80` to the port you are serving:
 
 ```
-Name of the rule | Protocol | Source Port | Device IP       | Destination Port
-Webserver        | TCP      | 80          | rpi 192.168.1.5 | 3000
++-----------------+----------+-------------+-----------------+-----------------+
+|Name of the rule | Protocol | Source Port | Device IP       | Destination Port|
++-----------------+----------+-------------+-----------------+-----------------+
+|Webserver        | TCP      | 80          | rpi 192.168.1.5 | 3000            |
++-----------------+----------+-------------+-----------------+-----------------+
 ```
 
 Now you can retrieve the global address of your computer, which is actually the router's one by going to any website like [http://www.whatismyip.com/](http://www.whatismyip.com/) and then give it to anyone who needs to access the app.
