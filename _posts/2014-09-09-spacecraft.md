@@ -19,7 +19,7 @@ From this point I won't talk about Minecraft, so you better google it if you don
 
 ##Motivation
 
-Minecraft is cool. Exploring *infinite* worlds, destroying, creating thing, crafting, etc. But you are not on a planet, you cannot go around the world, you'll never reach your original location.
+Minecraft is cool. Exploring *infinite* worlds, destroying, creating things, crafting, etc. But you are not on a planet, you cannot go around the world, you'll never reach your original location.
 Imagine if you just could fly away from the planet and visit other planets or other solar systems!. That would be so cool!
 
 However the duration was bout three weeks, so we didn't have enough time to implement everything. Therefore we focused on Level of Detail, procedural generation and saving world modifications.
