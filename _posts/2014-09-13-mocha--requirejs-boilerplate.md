@@ -30,13 +30,9 @@ $ tree
 .
 ├── Gruntfile.js
 ├── index.html
-├── lib
-│   ├── domReady.js
-│   ├── require.js
-│   └── selfish.js
 ├── main.js
 ├── package.json
-├── src
+├── js
 │   ├── app.js
 │   └── card.js
 └── test
@@ -51,15 +47,25 @@ Let's look at the `package.json` file as it includes all the dependencies needed
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "test": "./node_modules/.bin/mocha"
   },
-  "dependencies": {},
+  "dependencies": {
+    "domready": "^1.0.7",
+    "requirejs": "^2.1.15",
+    "selfish": "^0.3.2"
+  },
   "devDependencies": {
     "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-requirejs": "~0.4.4",
+    "grunt-http-server": "0.0.5",
     "grunt-mocha-test": "~0.11.0",
     "requirejs": "^2.1.15",
+    "rjs-build-analysis": "0.0.3",
     "should": "~4.0.4"
   }
 }
+
 {% endhighlight %}
 
 The `Gruntfile.js` file has been simplified to match the testing part:
@@ -88,10 +94,25 @@ module.exports = function(grunt) {
 };
 {% endhighlight %}
 
+We are using `requirejs` to load modules. Therefore we can share some the configuration with a file: `require-config.js`
+
+{% highlight js %}
+requirejs.config({
+    baseUrl: 'js',
+    nodeRequire: require,
+    paths: {
+        ready: '../node_modules/domready/ready.min',
+        selfish: '../node_modules/selfish/selfish',
+    },
+});
+{% endhighlight %}
+
+In this project I load this file only once, in the `main.js`. However when having more complex configuration you should load it every time you need it.
+
 We first start by using `requirejs` and `selfish` to create some classes that will be used in the application:
 
 {% highlight js %}
-define(["lib/selfish"], function(selfish) {
+define(["selfish"], function(selfish) {
     var Base = selfish.Base;
     var Card = Base.extend({
         initialize: function(cost) {
@@ -116,7 +137,7 @@ var requirejs = require("requirejs");
 var assert = require("assert");
 var should = require("should");
 requirejs.config({
-    baseUrl: '.',
+    baseUrl: 'js',
     nodeRequire: require
 });
 
@@ -124,7 +145,7 @@ describe('Card Testing', function() {
     // Load modules with requirejs before tests
     var Card, Victory;
     before(function(done) {
-        requirejs(['src/card'], function(card) {
+        requirejs(['card'], function(card) {
             Card = card;
             done(); // We can launch the tests!
         });
@@ -158,9 +179,9 @@ var should = require("should");
 
 We are going to use `requirejs` to load modules. This is actually different from the `nodejs` method `require()`.
 Then we add the configuration. The `baseUrl` specifies from which point modules must be found.
-This path is relative to the runtime, thus when running `grunt` at project root (cf `tree`) we must specify files as `src/card.js`.
+This path is relative to the runtime, thus when running `grunt` at project root (cf `tree`) we must specify files as `card` or `subdir/file`.
 
-When loading modules within tests there's one important thing: creating a test before calling `requirejs()`. This is because mocha need to know tests exists.
+When loading modules within tests there's one important thing: creating a test before calling `requirejs()`. This is because `Mocha` need to know tests exists.
 After that we can load any modules needed by the tests:
 
 {% highlight js %}
@@ -178,14 +199,13 @@ describe('Card Testing', function() {
 We declare a variable `Card` to store the `Card` class and use it later in the tests.
 By using the `before(done)` function we ensure that classes will be available **before** any test.
 Calling `done()` callback is necessary because we're dealing with asynchronous module loading, thus we have to notify `Mocha` that modules are available.
-If we don't call `done()`, tests will fail because they're called before `requirejs()` call end.
+If we don't call `done()`, tests will fail because they will be called before `requirejs()` call ends.
 
 **Note**: The `describre()`, `before(done)` and `it()` methods are `BDD` assertions style (as `shouldjs`). The `TDD` equivalents are `suite()`, `setup(done)` and `test()`
 
 Once the *setup* is done we can do the tests as usual:
 
 {% highlight js %}
-
 describe('#instanciation', function(){
     it('should work without problems', function(){
         Card.should.have.property('new');
