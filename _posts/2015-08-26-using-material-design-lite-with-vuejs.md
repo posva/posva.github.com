@@ -5,7 +5,6 @@ description: ""
 categories: [js]
 tags: [js]
 ---
-{% include JB/setup %}
 
 When building an application I like to use a nice framework for the design.
 Lately [Material

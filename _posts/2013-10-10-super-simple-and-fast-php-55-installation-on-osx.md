@@ -5,7 +5,6 @@ description: "hf"
 category: php 
 tags: [php, misc]
 ---
-{% include JB/setup %}
 
 I'm starting to get more interested into web technologies and I feel the need of updating some of my tools such as PHP. I was kind of surpirsed how easy it is thanks to [this](http://php-osx.liip.ch/). The instructions are described there but I'm going to put them here too :P
 

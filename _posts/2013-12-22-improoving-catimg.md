@@ -7,7 +7,6 @@ tags: [zsh, fun, color, bash, cat, img, catimg]
 img: img/posts/catimg1.png
 date: 2013-12-09
 ---
-{% include JB/setup %}
 
 ## Old catimg
 The old version of `catimg` was slow, **VERY** slow.

@@ -5,7 +5,6 @@ description: "So easy to sync!"
 categories: [shell, git, misc]
 tags: [zsh, dotfiles, bash, custom, gitconfig, git]
 ---
-{% include JB/setup %}
 
 ##What are the dotfiles
 

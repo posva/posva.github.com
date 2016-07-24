@@ -5,7 +5,6 @@ description: ""
 categories: [shell, git, zs]
 tags: [zsh, git, flow, completion, alias, aliases]
 ---
-{% include JB/setup %}
 
 I recently started using [git-flow](https://github.com/nvie/gitflow) which is an
 utility that makes it really easy

@@ -5,7 +5,6 @@ description: ""
 categories: [misc, blog]
 tags: [misc, blog, url, namecheap]
 ---
-{% include JB/setup %}
 
 For some reason I wanted to have my own URL, it's nice to have [http://posva.github.io](http://posva.github.io) as URL but having a `.com`, `.net`, `.org` is even better!
 

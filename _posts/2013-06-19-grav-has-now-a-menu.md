@@ -6,7 +6,6 @@ categories: [grav, cpp, games]
 tags: [grav, cpp, games, vvvvvv]
 date: 2011-10-29
 ---
-{% include JB/setup %}
 
 Yep! And it's fully working! The menu consists on 4 different kind of items:
 

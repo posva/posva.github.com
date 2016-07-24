@@ -8,7 +8,6 @@ group: project
 img: img/terminal-icon.png
 comments: true
 ---
-{% include JB/setup %}
 
 
 ##Configure script

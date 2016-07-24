@@ -1,24 +1,10 @@
 ---
-layout: page
-title: Welcome!
-tagline: This is my little world
+layout: home
 ---
-{% include JB/setup %}
+# About Theme
 
-# Hey!
-Hi, I'm Ed (aka Posva) and this is my little dev blog where I post things I experiment with and the advancement on my projects.
-Feel free to send me an email if you want to tell me something at posva13@gmail.com
-You can find more information about myself [here]({{ BASE_PATH }}/about.html).
+This theme is Jekyll port of [vangeltzo.com](http://vangeltzo.com/) (by [Vangelis Tzortzis](https://github.com/srekoble)).
 
-<div class="blog-index">
-{% assign post = site.posts.first %}
-{% assign content = post.content %}
-{% include post_detail.html %}
-</div>
+To learn how to install and use this theme check out the [installation guide](http://taylantatli.me/Halve/halve-theme/) for more information.
 
-# Posts List
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+If you have a question, find a bug, or just want to say hi, please open an [issue on GitHub](https://github.com/TaylanTatli/Halve/issues/new).

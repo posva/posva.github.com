@@ -6,7 +6,6 @@ tagline: "Sometimes I'm able to draw"
 categories: [out-topic, retro]
 tags: [old school, poster]
 ---
-{% include JB/setup %}
 
 Hey, today I have something that have nothing to deal with my projects. It's just a work we needed to do for a disciple. I have some fun using my tablet and drew on top of some bioshock drawings to get something not too ugly.
 

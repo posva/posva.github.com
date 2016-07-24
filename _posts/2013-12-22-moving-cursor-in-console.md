@@ -5,7 +5,6 @@ description: "More control over your terminal!"
 category: "shell"
 tags: [move, cursor, terminal, shell, misc, fun]
 ---
-{% include JB/setup %}
 
 ## Cursor
 While printing text for your tests or any other thing you sometimes want to make better output to make your tests look more elegant or whatever reason.

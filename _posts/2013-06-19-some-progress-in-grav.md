@@ -6,7 +6,6 @@ categories: [grav, cpp, games]
 tags: [grav, games, cpp, vvvvvv, gravitron]
 date: 2011-10-21
 ---
-{% include JB/setup %}
 
 Hi! I have been coding a bit the game, but not very much because of the exams, in fact I still have two next week, but these one are about compuer science.
 Anyway, what I have been working on is the timer, the sequences, the play... everything to be more precise.

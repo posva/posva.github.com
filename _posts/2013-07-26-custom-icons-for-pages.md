@@ -5,7 +5,6 @@ description: "Icons are good for you!"
 categories: [blog, jekyll]
 tags: [blog, help, jekyll]
 ---
-{% include JB/setup %}
 
 ##Icons are beautiful
 I personnay like when things show off a bit. Icons are this kind of things that are simple yet beautiful.
@@ -142,7 +141,6 @@ title: Projects
 group: navigation
 dropdown: project
 ---
-{% include JB/setup %}
 
 <h2>All Pages</h2>
 <ul>

@@ -5,7 +5,6 @@ description: "VVVVVV Gravitron clone"
 categories: [cpp, games, Grav]
 tags: [cpp, game, vvvvvv, gravitron, grav]
 ---
-{% include JB/setup %}
 
 ## VVVVVV
 As you surely know VVVVVV is a well known retro platformer game where you cannot jump but you can inverse the gravity.

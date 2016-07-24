@@ -6,7 +6,6 @@ categories: [grav, cpp, games]
 tags: [games, cpp, grav, vvvvvv]
 date: 2011-11-07
 ---
-{% include JB/setup %}
 
 As I said, here it is, an alpha release, still buggy, but doesn't matter :P. However there are some things you should know: -You can only use letters, numbers and dots for password and username -Giving the background a huge opacity may be dangerous... Seriously... Now you're ready to go! DOWNLOAD IT!
 

@@ -5,7 +5,6 @@ description: ""
 categories: [grav, games, cpp]
 tags: [grav, games, vvvvvv, cpp, gravitron]
 ---
-{% include JB/setup %}
 
 ##Grav
 I already talked about that project, well here I'm releasing the last version I have. It's not complete but I'll not work on it anymore, therefore you can consider this as th elas version and play it as much as you want.

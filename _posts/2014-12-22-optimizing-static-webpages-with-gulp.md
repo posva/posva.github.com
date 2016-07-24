@@ -5,7 +5,6 @@ description: "usemin + imagemin + uncss"
 categories: [web, gulp]
 tags: [web, gulp, watch, usemin, uncss, imagemin, optimization, connect, server]
 ---
-{% include JB/setup %}
 
 Recently I decided to create my own online portfolio/CV. Having a Github profile
 with all of your projects is nice but seems quite slow to inspect in my opinion.

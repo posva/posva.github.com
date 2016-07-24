@@ -7,7 +7,6 @@ tags: [game, cpp, minecraft, spacecraft]
 group: project
 img: img/spacecraft.png
 ---
-{% include JB/setup %}
 
 I'm very late as this project ended in June but better late than never!
 Anyways, this project was done during the 2nd year speciality project. We were three: [Arthur Sonzogni](http://panigame.fr/), [Smea](http://smealum.net/) and myself.

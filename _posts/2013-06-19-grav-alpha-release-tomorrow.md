@@ -6,7 +6,6 @@ categories: [grav, cpp, games]
 tags: [grav, vvvvvv, games, cpp]
 date: 2011-11-06
 ---
-{% include JB/setup %}
 
 Grav is going very well even if I had not a lot of time to code it, I porgressed in the project a lot, and I have good news! I have a song, well I'm not completly sure about song yet... but I'm sure about the artist. LukHash has composed really nice music and i contacted him today to ask the permission about adding to the game and even about adding them to Kill da Ducks (since they fit very well) and guess what... he is ok! He was very kind and answer fast my petition, I liked that. Here is his website: http://www.lukhash.com It's a very polished flash-based website, you should check it. The song i'm going to use is that one:
 

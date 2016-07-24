@@ -5,7 +5,6 @@ description: "Animations are now easier to write!"
 categories: [games, kdd, cpp]
 tags: [game, kdd, kill, da, ducks, cpp]
 ---
-{% include JB/setup %}
 
 ##Kill da Ducks
 Today I had some fun adding a new way of reading animations for the engine of my game Kill da Ducks.

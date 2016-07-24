@@ -7,7 +7,6 @@ tags: [Makefile, gnu, configure, dev, tools, c, cpp, generate, python, python3]
 group: project
 img: img/terminal-icon.png
 ---
-{% include JB/setup %}
 
 ##configure.py
 ---

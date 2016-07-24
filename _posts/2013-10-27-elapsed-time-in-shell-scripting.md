@@ -5,7 +5,6 @@ description: "Making your script look better"
 categories: [shell, scripting]
 tags: [shell, elapsed, time, zsh, sh, bash]
 ---
-{% include JB/setup %}
 
 Today I was looking at some building tools and they often print the time they take to do something. I wanted to add this feature to the [configure-script]({{site.url}}/shell/c/cpp/2013/08/18/configure-script/).
 

@@ -5,7 +5,6 @@ description: "Stop using only Monokai"
 category: "vim"
 tags: [vim, themes, tricks]
 ---
-{% include JB/setup %}
 
 #Motivation
 

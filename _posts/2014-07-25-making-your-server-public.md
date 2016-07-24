@@ -5,7 +5,6 @@ description: "and hosting it by yourself"
 categories: [misc, server, web, rpi, pi, node]
 tags: [nodejs, web, rpi]
 ---
-{% include JB/setup %}
 
 ## The server
 

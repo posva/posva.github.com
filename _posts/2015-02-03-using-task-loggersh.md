@@ -5,7 +5,6 @@ description: "to rewrite my dotfiles install.sh"
 categories: [shell]
 tags: [task, logger, sh, task-logger, task-logger.sh, shell, bash, zsh, dotfiles]
 ---
-{% include JB/setup %}
 
 #task-logger.sh
 

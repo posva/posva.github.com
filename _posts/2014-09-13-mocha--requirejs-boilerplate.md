@@ -5,7 +5,6 @@ description: ""
 categories: [web, js, nodejs, tests]
 tags: [node, nodejs, web, js, testing, mocha, require, requirejs]
 ---
-{% include JB/setup %}
 
 Yesterday I had a bit of a bad time trying to code some tests for a web application (written in `js`).
 The main problem was that using `requirejs` needed some further configuration within tests. It didn't take too long to find what I was doing wrong but it may be confusing at the beginning.
