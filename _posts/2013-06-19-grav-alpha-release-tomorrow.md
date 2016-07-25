@@ -11,8 +11,8 @@ Grav is going very well even if I had not a lot of time to code it, I porgressed
 
 <iframe width="420" height="315" src="http://www.youtube.com/embed/e8r5DpDN_Aw?rel=0" frameborder="0" allowfullscreen="true"> </iframe>
 
-![pic]({{BASE_PATH}}/img/posts/grav/pic007.png)
-![pic]({{BASE_PATH}}/img/posts/grav/pic008.png)
+![pic]({{site.baseurl}}/images/posts/grav/pic007.png)
+![pic]({{site.baseurl}}/images/posts/grav/pic008.png)
 
 As you can see it's almost complete, (for a playable version). I need to do an update checker (easy and fast) and a text showing you highscore on the game screen, that's all! So I'm pretty sure that tomorrow I will post a playable version ^^. It will be avaible for Windows and Mac, I'm sorry about Linux, I still have some problem to compile run SFML Applications And I didn't find a solution...
 

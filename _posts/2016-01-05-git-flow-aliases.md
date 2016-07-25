@@ -26,7 +26,7 @@ brew install git-flow
 This also downloads the completion files. Which are in my opinion really useful
 when you start using a tool
 
-![completion]({{ BASE_PATH }}/img/posts/git-flow-completion.png)
+![completion]({{ site.baseurl }}/images/posts/git-flow-completion.png)
 
 However we can bring it to the next level by setting up some aliases. This takes
 very little time and saves you some keystrokes everyday. I couldn't find any so

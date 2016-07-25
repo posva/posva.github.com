@@ -17,7 +17,7 @@ During this post I'll be talking about:
 
 In order to run tasks you need to install `grunt` with `npm install -g grunt-cli`.
 
-#Context
+# Context
 
 In order to learn some modular JavaScript and how `nodejs` works, I decided to code a card game called Dominion.
 There are already multiple web versions of this game, there is even an official one. Yet this is a good way of practicing modularity, testing and server/client behaviour with `nodejs`.
@@ -220,7 +220,7 @@ describe('#instanciation', function(){
 
 Remember to use the `done()` callback when dealing with asynchronous code!
 
-#Boilerplate
+# Boilerplate
 
 You can find the boilerplate here:
 

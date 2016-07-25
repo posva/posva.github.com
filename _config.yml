@@ -2,7 +2,7 @@
 title: Posva Dev Blog
 description: Web, Game dev and UI
 url: http://posva.net
-logo: halve.png
+logo: myself.jpg
 locale: en_US
 
 # Left Block Images
@@ -58,7 +58,9 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-time-to-read
+  - jemoji
 
 # Exclude list
-include: [_pages]
+include: [_pages, extra]
 exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store]

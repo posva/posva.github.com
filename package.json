@@ -1,0 +1,28 @@
+{
+  "name": "posva-dev-blog",
+  "version": "1.0.0",
+  "description": "My dev blog",
+  "main": "index.js",
+  "watch": {
+    "build": "assets/js/src/**/*.js"
+  },
+  "scripts": {
+    "build": "rollup assets/js/src/main.js | uglifyjs -c --screw-ie8 --mangle -o assets/js/main.min.js",
+    "dev": "npm-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/posva/posva.github.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/posva/posva.github.com/issues"
+  },
+  "homepage": "https://github.com/posva/posva.github.com#readme",
+  "devDependencies": {
+    "npm-watch": "^0.1.5",
+    "rollup": "^0.34.1",
+    "uglify-js": "^2.7.0"
+  }
+}

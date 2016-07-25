@@ -6,13 +6,13 @@ categories: [shell, git, misc]
 tags: [zsh, dotfiles, bash, custom, gitconfig, git]
 ---
 
-##What are the dotfiles
+## What are the dotfiles
 
 Dotfiles are all these files that usually start by `.` and let you configure many applications behaviour such as `vim` and `git`.
 
 When you work on different computer you start missing your `vimrc`, `bashrc`, etc. This is when you start copying your files from one computer to another. That's **sooooo** annoying... `rsync`, `scp`you get tired of that very soon but there is a solution: `git`
 
-##Syncing with git
+## Syncing with git
 That's right, `git` is the perfect tool as we're manipulating text all the time and we can perform upgrades to our dotfiles from anywhere with some `git push` and `git pull` or `gp` and `gl` if you like aliases :P
 
 These are the steps I did to have my dotfiles working. I got inspired by someone else but I don't remember his name so I cannot give him credit :/

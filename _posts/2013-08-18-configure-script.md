@@ -5,18 +5,18 @@ description: "A simple script to generate Makefile for your C/C++ projects"
 categories: [shell, c, cpp]
 tags: [Makefile, gnu, configure, dev, tools, c, cpp, generate]
 group: project
-img: img/terminal-icon.png
+img: images/configure.png
 comments: true
 ---
 
 
-##Configure script
+## Configure script
 -----------
 
 This script generate a Makefile with the right dependencies for each file that need to be compiled. It also checks for any dos file and convert it to unix if the option -a is used.
 ![pic](http://i.imgur.com/Futju0p.png)
 
-##Help
+## Help
 ------------
 
 Here is the help, you can get it aswell by passing the -h option
@@ -47,6 +47,6 @@ Running without arguments is equivalent to this:
                -Isrc -L/usr/local/lib -e cpp -E main -M Makefile
 {% endhighlight %}
 
-##Source Code
+## Source Code
 Get the source code [here](https://github.com/posva/configure-script)
 

@@ -3,14 +3,20 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 {% include head.html %}
 <body id="homepage">
 
   <div class="block-left">
     <div class="content">
       <div class="main-info">
-        <a href="{{ site.baseurl }}/" class="logo"><img src="{{ site.baseurl }}/images/{{ site.logo }}"></a>
+        <a href="{{ site.baseurl }}/" class="logo">
+          <img src="{{ site.baseurl }}/images/{{ site.logo }}"
+               srcset="{{ site.baseurl }}/images/{{ site.logo }} 1x,
+                       {{ site.baseurl }}/images/{{ site.logo | replace: '.', '-2x.' }} 2x,"
+               alt="Logo"
+          >
+        </a>
         <h1>
           {{ site.title }}
         </h1>
@@ -24,7 +30,8 @@ layout: compress
   </div>
 
   <div class="block-right">
-    <a href="{{ site.baseurl }}/posts" title="posts" class="posts-menu-icon"></a>
+    <a href="{{ site.baseurl }}/posts" title="posts" class="posts-menu-icon">
+    </a>
     <span class="posts-link">POSTS</span>
     <a title="project" class="projects-menu-icon">
       <span></span>
@@ -38,6 +45,5 @@ layout: compress
   </div>
   {% include overlay.html %}
   {% include scripts.html %}
-  <script src="{{ site.baseurl }}/assets/js/canvas.js"></script>
 </body>
 </html>

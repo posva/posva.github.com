@@ -6,7 +6,7 @@ categories: [grav, games, cpp]
 tags: [grav, games, vvvvvv, cpp, gravitron]
 ---
 
-##Grav
+## Grav
 I already talked about that project, well here I'm releasing the last version I have. It's not complete but I'll not work on it anymore, therefore you can consider this as th elas version and play it as much as you want.
 
 There are many things not working on this version... But the main things works well:
@@ -18,13 +18,13 @@ There are many things not working on this version... But the main things works w
 
 The Hard and God mode doesn't work well anymore but you can play them for the fun, no highscores though...
 
-##Pics
+## Pics
 Because everybody likes pics...
 
-![pic]({{BASE_PATH}}/img/posts/grav/final1.png)
-![pic]({{BASE_PATH}}/img/posts/grav/final2.png)
+![pic]({{site.baseurl}}/images/posts/grav/final1.png)
+![pic]({{site.baseurl}}/images/posts/grav/final2.png)
 
-##Downloads
+## Downloads
 
 Here are the download links. Windows and OS X should work fine but I cannot get the linux release to work correctly on my computer... Though I'm giving you the binaries, maybe someone can find out how to solve the issues... The main problem is that I cannot play with an account, audio is bad and it lags a lot (that may be cause of my drivers).
 

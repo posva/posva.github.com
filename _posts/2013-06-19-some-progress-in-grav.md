@@ -15,4 +15,4 @@ By stats I mean the time you have been playing, the deaths, the best time, regis
 
 I may add more stats later, I accepts any suggestions :) The connections are called in threads, so they doesn't interfer with the gameplay.
 
-![pic]({{BASE_PATH}}/img/posts/grav/pic005.png)
+![pic]({{site.baseurl}}/images/posts/grav/pic005.png)

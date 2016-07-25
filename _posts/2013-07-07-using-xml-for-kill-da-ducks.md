@@ -6,14 +6,14 @@ categories: [games, kdd, cpp]
 tags: [game, kdd, kill, da, ducks, cpp]
 ---
 
-##Kill da Ducks
+## Kill da Ducks
 Today I had some fun adding a new way of reading animations for the engine of my game Kill da Ducks.
 
 Before I used `ini` files which were enough but I just wanted more flexible config files so I switched to `xml` files.
 
 I went from this:
 
-####INI file
+#### INI file
 {% highlight ini %}
 [bak1.png]
 h = 64
@@ -60,7 +60,7 @@ y = 72
 
 To this:
 
-####XML file
+#### XML file
 {% highlight xml %}
 <animations texture="pack_test.png" key="mini">
     <sprite name="bak1" originx="32.000000" originy="32.000000">

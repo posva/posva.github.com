@@ -1,10 +1,9 @@
 ---
 layout: home
 ---
-# About Theme
 
-This theme is Jekyll port of [vangeltzo.com](http://vangeltzo.com/) (by [Vangelis Tzortzis](https://github.com/srekoble)).
+# About Me
 
-To learn how to install and use this theme check out the [installation guide](http://taylantatli.me/Halve/halve-theme/) for more information.
+I'm a Javascript enthusiast who focus on UI and who likes game dev too. I organise Paris Vue.js Meetup and try my best to help out with the framework. I'm also a member of the core dev team.
 
-If you have a question, find a bug, or just want to say hi, please open an [issue on GitHub](https://github.com/TaylanTatli/Halve/issues/new).
+:construction: I'm rebuilding the blog :construction:

@@ -15,7 +15,7 @@ Lite](http://www.getmdl.io) which is library agnostic and can be used with any
 data-reactive library/framework like Angular, Reactjs, Aurelia or, my preferred
 one, [Vue.js](http://vuejs.org).
 
-![vue]({{BASE_PATH}}/img/posts/vue-logo.png)
+![vue]({{site.baseurl}}/images/posts/vue-logo.png)
 
 As MDL (Material Design Lite) is library/framework agnostic, you have to
 manually call some functions on elements that are dynamically created. This is
@@ -39,7 +39,7 @@ In the case of a button, this will add the on click ripple effect.
 
 But what about more complex components, like the progressbar?
 
-![progress]({{BASE_PATH}}/img/posts/vue-mdl-progress.png)
+![progress]({{site.baseurl}}/images/posts/vue-mdl-progress.png)
 
 It has a variable
 value that must be changed with a special method

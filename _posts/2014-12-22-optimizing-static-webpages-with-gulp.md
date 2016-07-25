@@ -15,7 +15,7 @@ and HTML pages.
 
 # Grunt or Gulp
 
-![gulp-grunt]({{BASE_PATH}}/img/posts/gulp-grunt.jpg)
+![gulp-grunt]({{site.baseurl}}/images/posts/gulp-grunt.jpg)
 
 I'm not going to discuss about which one is better but I already used
 [`Grunt`](http://gruntjs.com/) in
@@ -53,7 +53,7 @@ gulp.task('jshint', function() {
 This is just an example to lint the `js` code using a better reporter. You will
 have to install these modules with `npm install`.
 
-#Directory structure
+# Directory structure
 
 {% highlight text %}
 .

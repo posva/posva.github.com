@@ -23,7 +23,7 @@ git push origin master
 
 - Finally you must configure the URL to point to gihub servers. For [Namecheap](htpp://namecheap.com) I needed to go to URL Forwarding and then change the existing values as follows:
 
-![p]({{BASE_PATH}}/img/posts/namecheap.png)
+![p]({{site.baseurl}}/images/posts/namecheap.png)
 
 Always as `A` records (the type!).
 
@@ -31,7 +31,7 @@ Then it takes quite a bit for the changes to be effectives, so be patient, it to
 
 I hope this helps someone someday!
 
-##A bit more
+## A bit more
 
 If you want to have something like `blog.posva.net` pointing to the blog you should add it in All Host Records section as a subdomain. Make it point to the same adress and you're done.
 

@@ -6,7 +6,7 @@ categories: [shell]
 tags: [task, logger, sh, task-logger, task-logger.sh, shell, bash, zsh, dotfiles]
 ---
 
-#task-logger.sh
+# task-logger.sh
 
 [**task-logger.sh**](https://github.com/posva/task-logger.sh) is a tiny shell lib I wrote about a week ago. It is compatible with `zsh` and `bash` and can be used with `sh` by just changing the `echo` calls (`sh` `echo` doesn't accept `-n` option).
 
@@ -104,4 +104,4 @@ In my dotfiles i replace the `ko` call with `return 1`
 
 At the moment I just have this tiny screenshot with a few tasks because most of them are skipped. I will added a better one when I can
 
-![shot]({{BASE_PATH}}/img/posts/dotfiles-log.png)
+![shot]({{site.baseurl}}/images/posts/dotfiles-log.png)

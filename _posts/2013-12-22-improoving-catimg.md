@@ -4,7 +4,7 @@ title: "Improoving catimg"
 description: "Displaying pictures 10x faster!"
 categories: [shell, retro, bash]
 tags: [zsh, fun, color, bash, cat, img, catimg]
-img: img/posts/catimg1.png
+img: images/posts/catimg1.png
 date: 2013-12-09
 ---
 
