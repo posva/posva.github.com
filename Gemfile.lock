@@ -33,8 +33,6 @@ GEM
       sass (~> 3.4)
     jekyll-sitemap (0.11.0)
       addressable (~> 2.4.0)
-    jekyll-time-to-read (0.1.2)
-      jekyll
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
     jemoji (0.7.0)
@@ -79,7 +77,6 @@ DEPENDENCIES
   jekyll-feed
   jekyll-gist
   jekyll-sitemap
-  jekyll-time-to-read
   jemoji
 
 BUNDLED WITH
