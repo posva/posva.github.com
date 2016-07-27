@@ -4,10 +4,11 @@
   "description": "My dev blog",
   "main": "index.js",
   "watch": {
-    "build": "assets/js/src/**/*.js"
+    "build:dev": "./assets/js/src/*.js"
   },
   "scripts": {
-    "build": "rollup assets/js/src/main.js | uglifyjs -c --screw-ie8 --mangle -o assets/js/main.min.js",
+    "build": "rollup -c rollup.prod.js | uglifyjs -c --screw-ie8 --mangle -o assets/js/main.min.js",
+    "build:dev": "rollup -c -o assets/js/main.min.js",
     "dev": "npm-watch"
   },
   "repository": {
@@ -21,8 +22,14 @@
   },
   "homepage": "https://github.com/posva/posva.github.com#readme",
   "devDependencies": {
+    "fetchival": "^0.3.2",
     "npm-watch": "^0.1.5",
     "rollup": "^0.34.1",
-    "uglify-js": "^2.7.0"
+    "rollup-plugin-alias": "^1.2.0",
+    "rollup-plugin-commonjs": "^3.3.1",
+    "rollup-plugin-node-resolve": "^1.7.1",
+    "rollup-plugin-replace": "^1.1.1",
+    "uglify-js": "^2.7.0",
+    "vue": "^2.0.0-beta.5"
   }
 }

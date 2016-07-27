@@ -59,6 +59,11 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
   - jemoji
+  - algoliasearch-jekyll
+
+algolia:
+  application_id: 'EWN7R5RMAA'
+  index_name:     'posva_blog'
 
 # Exclude list
 include: [_pages, extra]
