@@ -4,7 +4,7 @@
   "description": "My dev blog",
   "main": "index.js",
   "watch": {
-    "build:dev": "./assets/js/src/*.js"
+    "build:dev": "assets/js/src/**/*.js"
   },
   "scripts": {
     "build": "rollup -c rollup.prod.js | uglifyjs -c --screw-ie8 --mangle -o assets/js/main.min.js",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/posva/posva.github.com#readme",
   "devDependencies": {
+    "fecha": "^2.2.0",
     "fetchival": "^0.3.2",
     "npm-watch": "^0.1.5",
     "rollup": "^0.34.1",

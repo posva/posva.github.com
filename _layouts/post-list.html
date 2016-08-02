@@ -39,13 +39,11 @@ layout: compress
               <a :href="post.url" class="post-title">
                 <span v-text="post.title"></span>
               </a>
-              <span class="date" v-text="post.date"></span>
+              <span class="date">${ post.date | date }</span>
             </h2>
             <p v-html="post.excerpt"></p>
             <ul class="tags">
-              <li v-for="tag in post.tags">
-                <a :href="'{{ site.baseurl }}/tags#' + tag" v-text="tag"></a>
-              </li>
+              <li v-for="tag in post.tags"><a :href="'{{ site.baseurl }}/tags#' + tag" v-text="tag"></a></li>
             </ul>
           </li>
         </ul>

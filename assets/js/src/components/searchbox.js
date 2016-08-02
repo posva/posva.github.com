@@ -18,10 +18,14 @@ export default {
       const me = this
       me.queryId = me.queryId || 0
       const queryId = ++me.queryId
-      search.get({query: query})
-        .then(function (results) {
-          if (queryId === me.queryId) me.$emit('hits', results.hits)
-        })
+      if (query) {
+        search.get({query: query})
+          .then(function (results) {
+            if (queryId === me.queryId) me.$emit('hits', results.hits)
+          })
+      } else {
+        me.$emit('hits', [])
+      }
     }
   }
 }
