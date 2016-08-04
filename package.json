@@ -30,6 +30,8 @@
     "rollup-plugin-commonjs": "^3.3.1",
     "rollup-plugin-node-resolve": "^1.7.1",
     "rollup-plugin-replace": "^1.1.1",
+    "striptags": "^2.1.1",
+    "truncate": "^2.0.0",
     "uglify-js": "^2.7.0",
     "vue": "^2.0.0-beta.5"
   }

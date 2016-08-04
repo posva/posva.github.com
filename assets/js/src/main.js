@@ -2,6 +2,8 @@ import Vue from 'vue/dist/vue.js'
 import './canvas.js'
 import Searchbox from './components/searchbox.js'
 import fecha from 'fecha'
+import striptags from 'striptags'
+import truncate from 'truncate'
 
 Vue.options.delimiters = ['${', '}']
 Vue.component('searchbox', Searchbox)
@@ -16,5 +18,10 @@ window.vm = new Vue({
   el: 'body',
   data: {
     hits: []
+  },
+  methods: {
+    filterHtml: function (html) {
+      return truncate(striptags(html), 100)
+    }
   }
 })

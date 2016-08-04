@@ -530,13 +530,20 @@ canvas {
     padding: 7px 10px;
     color: lighten($black, 28%);
     font-size: 11px;
-    margin: 0 0.3rem 0.3rem 0;
+    margin-bottom: 0.3rem;
     text-transform: uppercase;
     > a {
       color: $white;
     }
   }
 }
+
+.content--dynamic {
+  .tags > li {
+    margin: 0 0.3rem 0.3rem 0;
+  }
+}
+
 
 .inner-post {
   h1 {
