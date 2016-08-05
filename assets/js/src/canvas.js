@@ -5,12 +5,15 @@ function Dot () {
   this.vy = -0.5 + Math.random()
   this.radius = Math.random()
 }
+
 Dot.prototype = {
+
   create: function () {
     ctx.beginPath()
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
     ctx.fill()
   },
+
   animate: function () {
     for (var i = 0; i < dots.nb; i++) {
       var dot = dots.array[i]
