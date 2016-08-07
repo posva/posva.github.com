@@ -11,7 +11,7 @@ layout: compress
     <div class="block-left">
       <div class="content">
         <div class="main-info">
-          <a href="{{ site.baseurl }}/" class="logo">
+          <a href="{{ site.baseurl }}/" class="logo" title="Home">
             <img src="{{ site.baseurl }}/images/{{ site.logo }}"
                  srcset="{{ site.baseurl }}/images/{{ site.logo }} 1x,
                          {{ site.baseurl }}/images/{{ site.logo | replace: '.', '-2x.' }} 2x,"
@@ -31,13 +31,7 @@ layout: compress
     </div>
 
     <div class="block-right">
-      <a href="{{ site.baseurl }}/posts" title="posts" class="posts-menu-icon">
-      </a>
-      <span class="posts-link">POSTS</span>
-      <a title="project" class="projects-menu-icon">
-        <span></span>
-      </a>
-      <span class="projects-link">PROJECTS</span>
+      {% include top-menu.html %}
       <div class="content">
         <div class="about-info">
           {{ content }}

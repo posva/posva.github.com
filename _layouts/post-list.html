@@ -10,31 +10,21 @@ layout: compress
     <div id="app">
       <div class="block-left">
         <div class="content">
-          <a href="{{ site.baseurl }}/" class="logo">
-            <img src="{{ site.baseurl }}/images/{{ site.logo | replace: '.', '-small.' }}"
-                 srcset="{{ site.baseurl }}/images/{{ site.logo | replace: '.', '-small.' }} 1x,
-                         {{ site.baseurl }}/images/{{ site.logo | replace: '.', '-small-2x.' }} 2x,"
-            >
-          </a>
+          {% include home-link.html %}
           <h1 class="section-title">{{ page.title}}<em>/</em>
           </h1>
         </div>
       </div>
 
       <div class="block-right">
-        <div>
-          <searchbox
-              @hits="hits = $event"
-              inline-template>
-            <div class="searchbox">
-              <input placeholder="Search..." v-model="query" type="text">
-            </div>
-          </searchbox>
-          <a href="posts.html" title="posts" class="posts-menu-icon"></a>
-          <a title="projects" class="projects-menu-icon">
-            <span></span>
-          </a>
-        </div>
+        <searchbox
+            @hits="hits = $event"
+            inline-template>
+          <div class="searchbox">
+            <input placeholder="Search..." v-model="query" type="text">
+          </div>
+        </searchbox>
+        {% include top-menu.html %}
 
         <div v-if="hits.length > 0" class="content content--dynamic">
           <ul class="posts-list">
