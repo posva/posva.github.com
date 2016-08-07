@@ -7,6 +7,7 @@ layout: compress
 {% include head.html %}
 <body id="posts" class="inner-post-page">
 
+  <div id="app">
     <div class="block-left">
       <div class="content">
         <a href="{{ site.baseurl }}/" class="logo"><img src="{{ site.baseurl }}/images/{{ site.logo }}"></a>
@@ -41,6 +42,8 @@ layout: compress
         {% include page-pagination.html %}
       </div>
     </div>
+  </div>
+
     {% include scripts.html %}
     {% include overlay.html %}
 </body>

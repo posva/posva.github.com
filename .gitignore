@@ -13,3 +13,4 @@ _plugins/
 testing.md
 .sass-cache
 node_modules
+.jekyll-metadata

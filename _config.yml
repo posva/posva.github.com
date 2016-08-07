@@ -59,7 +59,23 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
   - jemoji
+  - algoliasearch-jekyll
+
+algolia:
+  application_id: 'EWN7R5RMAA'
+  index_name:     'posva_blog'
 
 # Exclude list
-include: [_pages, extra]
-exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store]
+include:
+  - _pages
+  - extra
+  - assets/js/main.min.js
+  - assets/_sass
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - _site
+  - CNAME
+  - Rakefile
+  - .sass-cache
