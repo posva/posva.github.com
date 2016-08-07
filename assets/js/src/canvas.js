@@ -41,21 +41,24 @@ function createDots () {
   dot.animate()
 }
 
-var canvas = document.querySelector('canvas')
-if (canvas) {
-  var ctx = canvas.getContext('2d')
-  var color = '#72cc96'
-  canvas.width = window.innerWidth
-  canvas.height = window.innerHeight
-  canvas.style.display = 'block'
-  ctx.fillStyle = color
-  ctx.lineWidth = 0.1
-  ctx.strokeStyle = color
-  var dots = {
-    nb: 500,
-    distance: 80,
-    d_radius: 150,
-    array: []
+var ctx, dots, canvas
+export function initCanvas () {
+  canvas = document.querySelector('canvas')
+  if (canvas) {
+    ctx = canvas.getContext('2d')
+    var color = '#72cc96'
+    canvas.width = window.innerWidth
+    canvas.height = window.innerHeight
+    canvas.style.display = 'block'
+    ctx.fillStyle = color
+    ctx.lineWidth = 0.1
+    ctx.strokeStyle = color
+    dots = {
+      nb: 500,
+      distance: 80,
+      d_radius: 150,
+      array: []
+    }
+    setInterval(createDots, 1000 / 30)
   }
-  setInterval(createDots, 1000 / 30)
 }

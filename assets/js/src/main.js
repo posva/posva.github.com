@@ -1,9 +1,10 @@
 import Vue from 'vue/dist/vue.js'
-import './canvas.js'
-import Searchbox from './components/searchbox.js'
 import fecha from 'fecha'
 import striptags from 'striptags'
 import truncate from 'truncate'
+
+import { initCanvas } from './canvas.js'
+import Searchbox from './components/searchbox.js'
 
 Vue.options.delimiters = ['${', '}']
 Vue.component('searchbox', Searchbox)
@@ -15,7 +16,7 @@ Vue.filter('date', function (dateStr) {
 })
 
 window.vm = new Vue({
-  el: 'body',
+  el: '#app',
   data: {
     hits: []
   },
@@ -25,3 +26,5 @@ window.vm = new Vue({
     }
   }
 })
+
+Vue.nextTick(initCanvas)

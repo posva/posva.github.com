@@ -885,3 +885,25 @@ canvas {
     }
   }
 }
+
+.searchbox {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: calc(100% - 180px);
+  input {
+    background-color: transparent;
+    outline: none;
+    width: 30%;
+    min-width: 120px;
+    border: none;
+    border-bottom: 1px solid darken($white, 40%);
+    padding: 0.3rem 1rem;
+    transition: border-color .3s ease, width .3s ease;
+
+    &:focus {
+      border-color: $green;
+      width: 100%;
+    }
+  }
+}
