@@ -22,17 +22,20 @@
   },
   "homepage": "https://github.com/posva/posva.github.com#readme",
   "devDependencies": {
-    "fecha": "^2.2.0",
+    "fecha": "^2.3.0",
     "fetchival": "^0.3.2",
-    "npm-watch": "^0.1.5",
-    "rollup": "^0.34.1",
+    "npm-watch": "^0.1.6",
+    "rollup": "^0.36.3",
     "rollup-plugin-alias": "^1.2.0",
-    "rollup-plugin-commonjs": "^3.3.1",
-    "rollup-plugin-node-resolve": "^1.7.1",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-replace": "^1.1.1",
     "striptags": "^2.1.1",
     "truncate": "^2.0.0",
-    "uglify-js": "^2.7.0",
-    "vue": "^2.0.0-beta.5"
+    "uglify-js": "^2.7.3",
+    "vue": "^2.0.3"
+  },
+  "dependencies": {
+    "whatwg-fetch": "^1.0.0"
   }
 }

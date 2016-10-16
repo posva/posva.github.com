@@ -13,7 +13,7 @@ export default {
     }),
     replace({
       'process.env.NODE_ENV': JSON.stringify('dev'),
-      'process.env.VUE_ENV': JSON.stringify('browser'),
+      'process.env.VUE_ENV': JSON.stringify('browser')
     }),
     alias({
       vue: './node_modules/vue/dist/vue.js'
